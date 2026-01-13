@@ -1,0 +1,39 @@
+@use 'common/variables';
+@use 'common/fonts';
+@use 'blocks/products-cart';
+@use 'layouts/page';
+@use 'layouts/section';
+@use 'cards/product-card';
+@use 'sections/app-section';
+@use 'pages/main-page';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: var(--layout-min-width);
+  font: var(--font-body);
+  color: var(--color-text);
+
+  &:has([aria-modal='true']) {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+h1 {
+  margin-bottom: 40px;
+  font: var(--font-heading-1);
+}
+
+/*
+ breakpoints:
+   576:
+   768:
+   992:
+   1200:
+   1400:
+*/
