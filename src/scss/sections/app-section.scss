@@ -1,0 +1,19 @@
+.app-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+
+  &__header {
+    display: grid;
+    column-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(300px, auto);
+  }
+
+  &__content {
+    display: grid;
+    column-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(600px, auto);
+  }
+}
